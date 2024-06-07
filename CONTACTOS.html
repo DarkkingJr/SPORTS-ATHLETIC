@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICIO AL CLIENTE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #64403b;
+            color: #fdfbfb;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #8a5454;
+            color: #f8f5f5;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #faf4f4;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 40px;
+        }
+        .producto {
+            border: 10px solid #ccc;
+            border-radius: 5px;
+            padding: 50px;
+            margin-bottom: 10px;
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .producto:hover {
+            transform: scale(1.05);
+        }  
+        .producto img {
+            width: 100%;
+            border-radius: 2px;
+        }
+        .producto h2 {
+            margin-top: 5px;
+        }
+        .producto p {
+            color: #777;
+        }
+        footer {
+            background-color: #333233;
+            color: #f8f4f4;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SERVICIO AL CLIENTE</h1>
+</header>
+
+<nav>
+    <a href="index.html">INICIO</a>
+    <a href="CATÁLOGO.html">CATÁLOGO</a>
+    <a href="CONTACTOS.html">CONTACTO</a>
+</nav>
+        <div class="comment-box">
+            <form action="#">
+                <div><input type="text" name="full_name" placeholder="Nombre Usuario..."></div>
+                <div><input type="email" name="email" placeholder="Correo Electrónico..."></div>
+                <div><textarea name="comment" id="" cols="30" rows="10" placeholder="Comentar..."></textarea></div>
+                <button onclick="addComment()">Comentar</button>                
+            </form>
+        </div>
+    </body>
+</html>
